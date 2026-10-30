@@ -1,0 +1,75 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar fixed at top */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome section full viewport height */
+#welcome-section {
+  height: 100vh; /* ✅ equal to viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #76c9ff, #f7ffde);
+  text-align: center;
+}
+
+/* Projects */
+#project-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.project-tile {
+  margin: 20px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  width: 200px;
+}
+
+/* Contact */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Media Query ✅ requirement */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  .project-tile {
+    width: 100%;
+  }
+}

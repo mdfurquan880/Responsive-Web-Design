@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* first-of-type */
+input:first-of-type {
+  border-radius: 15px;
+  background-color: #f0f8ff;
+}
+
+/* invalid */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* valid */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* focus */
+input:focus,
+textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+.radio-group {
+  padding: 10px;
+}
+
+/* checked styles */
+.radio-group input[type="radio"]:checked {
+  border-color: blue;
+  background-color: lightblue;
+  box-shadow: 0 0 6px blue;
+}
+
+/* checked label */
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+  font-weight: bold;
+}

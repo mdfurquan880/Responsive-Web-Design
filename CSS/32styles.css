@@ -1,0 +1,63 @@
+:root {
+  --color0: #ff0000;
+  --color1: #ff6600;
+  --color2: #ffcc00;
+  --color3: #99cc00;
+  --color4: #33cc33;
+  --color5: #008000;
+
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed black;
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+#legend-gradient {
+  width: 300px;
+  height: 30px;
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0%,
+    var(--color0) 16%,
+    var(--color1) 16%,
+    var(--color1) 32%,
+    var(--color2) 32%,
+    var(--color2) 48%,
+    var(--color3) 48%,
+    var(--color3) 64%,
+    var(--color4) 64%,
+    var(--color4) 80%,
+    var(--color5) 80%,
+    var(--color5) 100%
+  );
+}
